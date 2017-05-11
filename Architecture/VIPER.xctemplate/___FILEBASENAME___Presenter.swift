@@ -16,16 +16,18 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterAppearance {
     func viewDidDisappear(_ animated: Bool)
 }
 
+/**
+ Inputs declarations here (Presenter)
+ */
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterInputs: class, ___FILEBASENAMEASIDENTIFIER___PresenterAppearance {
-    /*
-     Inputs declarations here (Presenter)
-     */
+
 }
 
+/**
+ Outputs declarations here (ViewController)
+ */
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutputs: class {
-    /*
-     Outputs declarations here (ViewController)
-     */
+
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterType {

@@ -8,16 +8,18 @@
 
 import Foundation
 
+/**
+ Inputs declarations here (Interactor)
+ */
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorInputs: class {
-    /*
-     Inputs declarations here (Interactor)
-     */
+
 }
 
+/**
+ Outputs declarations here (Presenter)
+ */
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutputs: class {
-    /*
-     Outputs declarations here (Presenter)
-     */
+
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorType {
