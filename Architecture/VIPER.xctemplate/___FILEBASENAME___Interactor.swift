@@ -28,14 +28,22 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorType {
 }
 
 final class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorType {
+    let navigator: ___FILEBASENAMEASIDENTIFIER___NavigatorInputs
     var inputs: ___FILEBASENAMEASIDENTIFIER___InteractorInputs { return self }
     weak var outputs: ___FILEBASENAMEASIDENTIFIER___InteractorOutputs?
 
-    init(outputs: ___FILEBASENAMEASIDENTIFIER___InteractorOutputs) {
+    init(navigator: ___FILEBASENAMEASIDENTIFIER___NavigatorInputs,
+         outputs: ___FILEBASENAMEASIDENTIFIER___InteractorOutputs) {
+
+        self.navigator = navigator
         self.outputs = outputs
         /*
          Inject additional dependencies here
          */
+    }
+
+    deinit {
+        print("['] \(self.dynamicType)")
     }
 }
 

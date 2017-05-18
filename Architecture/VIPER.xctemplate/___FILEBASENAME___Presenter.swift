@@ -46,6 +46,10 @@ final class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER
          Inject additional dependencies here
          */
     }
+
+    deinit {
+        print("['] \(self.dynamicType)")
+    }
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterAppearance {

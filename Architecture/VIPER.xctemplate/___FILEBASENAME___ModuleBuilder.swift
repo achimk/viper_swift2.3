@@ -18,6 +18,12 @@ final class ___FILEBASENAMEASIDENTIFIER___ModuleBuilder {
     }
 
     func build() -> UIViewController {
+
+        /*
+         Navigator
+         */
+        let navigator = ___FILEBASENAMEASIDENTIFIER___Navigator()
+
         /*
          View -> Presenter -> Interactor
          */
@@ -25,7 +31,7 @@ final class ___FILEBASENAMEASIDENTIFIER___ModuleBuilder {
 
         let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(outputs: view) // Inject navigator here
 
-        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor(outputs: presenter)
+        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor(navigator: navigator, outputs: presenter)
 
         /*
          Interactor -> Presenter -> View
