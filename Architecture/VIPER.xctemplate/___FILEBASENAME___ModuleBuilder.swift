@@ -29,9 +29,9 @@ final class ___FILEBASENAMEASIDENTIFIER___ModuleBuilder {
          */
         let view = ___FILEBASENAMEASIDENTIFIER___ViewController()
 
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(outputs: view) // Inject navigator here
+        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(navigator: navigator, outputs: view)
 
-        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor(navigator: navigator, outputs: presenter)
+        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor(outputs: presenter)
 
         /*
          Interactor -> Presenter -> View
