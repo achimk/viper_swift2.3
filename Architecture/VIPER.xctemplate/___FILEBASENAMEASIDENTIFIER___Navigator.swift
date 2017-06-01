@@ -11,11 +11,11 @@ import Foundation
 /**
  Inputs declarations here (Presenter)
  */
-protocol ___FILEBASENAMEASIDENTIFIER___NavigatorInputs: class {
+protocol ___FILEBASENAMEASIDENTIFIER___NavigatorType: class {
 
 }
 
-final class ___FILEBASENAMEASIDENTIFIER___Navigator: ___FILEBASENAMEASIDENTIFIER___NavigatorInputs {
+final class ___FILEBASENAMEASIDENTIFIER___Navigator: ___FILEBASENAMEASIDENTIFIER___NavigatorType {
 
     init() { }
 

@@ -36,12 +36,12 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterType {
 }
 
 final class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterType {
-    let navigator: ___FILEBASENAMEASIDENTIFIER___NavigatorInputs
+    let navigator: ___FILEBASENAMEASIDENTIFIER___NavigatorType
     var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInputs!
     var inputs: ___FILEBASENAMEASIDENTIFIER___PresenterInputs { return self }
     weak var outputs: ___FILEBASENAMEASIDENTIFIER___PresenterOutputs?
 
-    init(navigator: ___FILEBASENAMEASIDENTIFIER___NavigatorInputs,
+    init(navigator: ___FILEBASENAMEASIDENTIFIER___NavigatorType,
          outputs: ___FILEBASENAMEASIDENTIFIER___PresenterOutputs) {
 
         self.navigator = navigator
