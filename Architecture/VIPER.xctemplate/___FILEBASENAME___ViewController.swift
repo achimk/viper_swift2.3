@@ -38,8 +38,8 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        super.viewDidDisappear(animated)
-        presenter.viewDidDisappear(animated)
+        super.viewDidAppear(animated)
+        presenter.viewDidAppear(animated)
     }
 
     override func viewWillDisappear(animated: Bool) {
